@@ -1,5 +1,5 @@
 # ApiPatternsClient
-A simple set of example code in dotnet 5.x to show patterns on sending and receiving data on a client with Azure EventHubs and BlobStorage.
+A simple set of example code in dotnet 5.x to show patterns on sending and receiving data on a client with Azure EventHubs, BlobStorage and CosmosDB (Mongo API).
 
 ## Azure Resources Required
 In order to build and use this code, the developer will need the following:

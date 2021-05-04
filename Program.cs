@@ -2,6 +2,7 @@
 using System.Threading.Tasks;
 using Microsoft.Extensions.Configuration;
 
+
 namespace ApiPatternsClient
 {
     class Program
@@ -15,15 +16,17 @@ namespace ApiPatternsClient
             // Obtain Connection String from appsettings.json or user-secrets (secrets.json)
             var blobConnString = Configuration["SecretStrings:BlobConnectionString"]; 
             var ehConnString = Configuration["SecretStrings:EhConnectionString"];
+            var mongoConnString = Configuration["SecretStrings:MongoConnectionString"];
+
 
             //Upload a File
             Console.WriteLine("Sending ./ExampleFiles/GitMsftLogo.png to Blob Storage");
-            //Console.WriteLine(BlobHandler.uploadFile(blobConnString));
+            Console.WriteLine(BlobHandler.uploadFile(blobConnString));
             Console.WriteLine("\n");
 
             //Download a File
             Console.WriteLine("Downloading what we just uploaded");
-            //Console.WriteLine(BlobHandler.downloadFile(blobConnString));
+            Console.WriteLine(BlobHandler.downloadFile(blobConnString));
             Console.WriteLine("\n");
 
             //Add Something to an Event Hub Queue
@@ -40,6 +43,15 @@ namespace ApiPatternsClient
             Console.WriteLine(processResult);
             Console.WriteLine("\n");
 
+            //Write something to Cosmos
+            Console.WriteLine("Writing Something to Cosmos");
+            Console.WriteLine(CosmosHandler.insertData(mongoConnString));
+            Console.WriteLine("\n");
+
+            //Read something from Cosmos
+            Console.WriteLine("Reading Something from Cosmos");
+            Console.WriteLine(CosmosHandler.selectData(mongoConnString));
+            Console.WriteLine("\n");
         }
 
         // ===============================================================================================

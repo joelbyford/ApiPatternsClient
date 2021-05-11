@@ -6,7 +6,7 @@ namespace ApiPatternsClient
 {
 
     // Examples primarily from: https://docs.microsoft.com/en-us/azure/cosmos-db/create-mongodb-dotnet
-    class CosmosHandler
+    class CosmosMongoHandler
     {
         public static string insertData(string mongoConnString)
         {

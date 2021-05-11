@@ -44,13 +44,13 @@ namespace ApiPatternsClient
             Console.WriteLine("\n");
 
             //Write something to Cosmos
-            Console.WriteLine("Writing Something to Cosmos");
-            Console.WriteLine(CosmosHandler.insertData(mongoConnString));
+            Console.WriteLine("Writing Something to Cosmos-Mongo");
+            Console.WriteLine(CosmosMongoHandler.insertData(mongoConnString));
             Console.WriteLine("\n");
 
             //Read something from Cosmos
-            Console.WriteLine("Reading Something from Cosmos");
-            Console.WriteLine(CosmosHandler.selectData(mongoConnString));
+            Console.WriteLine("Reading Something from Cosmos-Mongo");
+            Console.WriteLine(CosmosMongoHandler.selectData(mongoConnString));
             Console.WriteLine("\n");
         }
 

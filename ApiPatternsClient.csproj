@@ -10,8 +10,10 @@
     <PackageReference Include="Azure.Messaging.EventHubs" Version="5.4.0" />
     <PackageReference Include="Azure.Messaging.EventHubs.Processor" Version="5.4.0" />
     <PackageReference Include="Azure.Storage.Blobs" Version="12.8.3" />
+    <PackageReference Include="Microsoft.Azure.Cosmos" Version="3.18.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="5.0.0" />
     <PackageReference Include="MongoDB.Driver" Version="2.12.3" />
+    <PackageReference Include="System.Text.Json" Version="5.0.2" />
   </ItemGroup>
 
   <ItemGroup>

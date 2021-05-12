@@ -17,6 +17,7 @@ namespace ApiPatternsClient
             var blobConnString = Configuration["SecretStrings:BlobConnectionString"]; 
             var ehConnString = Configuration["SecretStrings:EhConnectionString"];
             var mongoConnString = Configuration["SecretStrings:MongoConnectionString"];
+            var cosmosConnString = Configuration["SecretStrings:SqlCosmosConnectionString"];
 
 
             //Upload a File
@@ -51,6 +52,18 @@ namespace ApiPatternsClient
             //Read something from Cosmos
             Console.WriteLine("Reading Something from Cosmos-Mongo");
             Console.WriteLine(CosmosMongoHandler.selectData(mongoConnString));
+            Console.WriteLine("\n");
+
+            //Write something to Cosmos SQL
+            Console.WriteLine("Writing Something to Cosmos-SQL");
+            string insertCosmosResult = CosmosSqlHandler.insertData(cosmosConnString).GetAwaiter().GetResult();
+            Console.WriteLine(insertCosmosResult);
+            Console.WriteLine("\n");
+
+            //Read something from Cosmos SQL
+            Console.WriteLine("Reading Something from Cosmos-SQL");
+            string selectCosmosResult = CosmosSqlHandler.selectData(cosmosConnString).GetAwaiter().GetResult();
+            Console.WriteLine(selectCosmosResult);
             Console.WriteLine("\n");
         }
 

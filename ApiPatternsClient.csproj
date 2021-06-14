@@ -9,7 +9,7 @@
   <ItemGroup>
     <PackageReference Include="Azure.Messaging.EventHubs" Version="5.4.1" />
     <PackageReference Include="Azure.Messaging.EventHubs.Processor" Version="5.4.1" />
-    <PackageReference Include="Azure.Storage.Blobs" Version="12.8.4" />
+    <PackageReference Include="Azure.Storage.Blobs" Version="12.9.0" />
     <PackageReference Include="Microsoft.Azure.Cosmos" Version="3.19.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="5.0.0" />
     <PackageReference Include="MongoDB.Driver" Version="2.12.4" />

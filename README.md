@@ -1,3 +1,5 @@
+[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/joelbyford/ApiPatternsClient) [![Build on Pull Request](https://github.com/joelbyford/ApiPatternsClient/actions/workflows/BuildOnPullRequest.yml/badge.svg)](https://github.com/joelbyford/ApiPatternsClient/actions/workflows/BuildOnPullRequest.yml)
+
 # ApiPatternsClient
 A simple set of example code in dotnet 5.x to show patterns on sending and receiving data on a client with Azure EventHubs, BlobStorage and CosmosDB (Mongo API).
 

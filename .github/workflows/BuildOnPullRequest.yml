@@ -1,4 +1,4 @@
-name: .NET
+name: Build on PR to Main
 
 on:
   pull_request:

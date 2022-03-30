@@ -12,7 +12,7 @@ In order to build and use this code, the developer will need the following:
 - **Azure CosmosDB (Sql API) Created** - https://docs.microsoft.com/en-us/azure/cosmos-db/create-cosmosdb-resources-portal 
 
 ## Connection Strings Required
-This code leverages the [Configuration](https://docs.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration?view=dotnet-plat-ext-5.0) nuget package and functionality, which in turn looks at the `appsettings.json` (or `secrets.json`) file for 2 different connection strings.  
+This code leverages the [Configuration](https://docs.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration?view=dotnet-plat-ext-5.0) nuget package and functionality, which in turn looks at the `appsettings.json` (or `secrets.json`) file for each of the following connection strings.  
 - **Blob Storage Connection String** - Stored as `SecretStrings:BlobConnectionString`, this can be found in the [Azure Portal](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal).  Alternatively, this can be also obtained through the [AZ CLI](https://docs.microsoft.com/en-us/cli/azure/storage/account?view=azure-cli-latest#az_storage_account_show_connection_string). 
 - **EventHubs Connection String** - Stored as `SecretStrings:EhConnectionString`, this can be found in the [Azure Portal](https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-get-connection-string). 
 - **CosmosMongoDB Connection String** - Stored as `SecretStrings:MongoConnectionString`, this can be found in the [Azure Portal](https://docs.microsoft.com/en-us/azure/cosmos-db/connect-mongodb-account)
